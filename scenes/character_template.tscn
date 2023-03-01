@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/spritesheets/mod_int_char_template_48.png" type="Texture" id=1]
+[ext_resource path="res://scenes/character_template.gd" type="Script" id=2]
+[ext_resource path="res://data/AnimationData.gd" type="Script" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+[node name="CharacterTemplate" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="CharacterSprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 56
+vframes = 20
+frame = 124
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationData" type="Node" parent="."]
+script = ExtResource( 3 )
