@@ -4,7 +4,6 @@ onready var sprite = get_node("CharacterSprite")
 onready var anim_player = get_node("AnimationPlayer")
 onready var anim_data = get_node("AnimationData")
 
-### I have commented out almost all of this b/c I wanted to make sure the animation code was working.
 
 #func _ready():
 #	add_animations_to_animation_player()

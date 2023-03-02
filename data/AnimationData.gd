@@ -37,7 +37,28 @@ func set_animations():# fill out "anims" dict with every combination of state + 
 			directions_added += 1
 		states_added += 1
 
+func add_frames():#add frame datas to each animation
+	var anims_with_frames = 0
+	for i in anims:
+		if anims[anims_with_frames]["state"] == "idle":
+			anims[anims_with_frames]["frame_coord.y"] = 1
+		elif anims[anims_with_frames]["state"] == "walk":
+			anims[anims_with_frames]["frame.coord.y"] = 2
+		anims_with_frames += 1
+	anims_with_frames = 0
+	for i in anims:
+		if anims[anims_with_frames]["direction"] == "right":
+			anims[anims_with_frames]["frame.coord.x.start"] = 0
+		elif anims[anims_with_frames]["direction"] == "up":
+			anims[anims_with_frames]["frame.coord.x.start"] = 6
+		elif anims[anims_with_frames]["direction"] == "left":
+			anims[anims_with_frames]["frame.coord.x.start"] = 12
+		else:
+			anims[anims_with_frames]["frame.coord.x.start"] = 18
+		anims_with_frames += 1
+
 func _ready():
 	set_animations()
+	add_frames()
 	print(len(anims))
 	print(anims)
