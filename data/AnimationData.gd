@@ -1,24 +1,12 @@
 extends Node
 
 # this variable is assigned through code, so no need to export
-# i still want to add more data to each entry
-# so something like
-## var anims = {
-#	0: {
-#		"name": "idle_right"
-#		"direction": "right"
-#		"state": "idle"
-#		"start frame": 0
-#		"end frame": 5
-#	},
-#	1: ...
-#
 var anims = {}
 
 # these never change, so no need to export
 var directions : PoolStringArray = ["right", "up", "left", "down"]
 
-#this variable is public so we can add animation states from the inspector
+#this variable is public so that we can add animation states from the inspector
 export var states : PoolStringArray = ["idle", "walk"]
 
 func set_animations():# fill out "anims" dict with every combination of state + direction
@@ -37,13 +25,15 @@ func set_animations():# fill out "anims" dict with every combination of state + 
 			directions_added += 1
 		states_added += 1
 
-func add_frames():#add frame datas to each animation
+func add_frames(): # add frame coord data to each animation
 	var anims_with_frames = 0
 	for i in anims:
 		if anims[anims_with_frames]["state"] == "idle":
 			anims[anims_with_frames]["frame_coord.y"] = 1
 		elif anims[anims_with_frames]["state"] == "walk":
 			anims[anims_with_frames]["frame.coord.y"] = 2
+		else:
+			print("I don't know where the frames are for this animation state")
 		anims_with_frames += 1
 	anims_with_frames = 0
 	for i in anims:
