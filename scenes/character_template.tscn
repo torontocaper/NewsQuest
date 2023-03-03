@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/spritesheets/mod_int_char_template_48.png" type="Texture" id=1]
 [ext_resource path="res://scripts/character_template.gd" type="Script" id=2]
-[ext_resource path="res://data/AnimationData.gd" type="Script" id=3]
+[ext_resource path="res://data/animation_data.gd" type="Script" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
