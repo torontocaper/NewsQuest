@@ -1,13 +1,38 @@
 extends KinematicBody2D
 
+var direction = "down"
+var state = "idle"
+var velocity : Vector2 = Vector2.ZERO
+
 onready var sprite = get_node("CharacterSprite")
 onready var anim_player = get_node("AnimationPlayer")
 onready var anim_data = get_node("AnimationData")
 
-#func _ready():
-#	add_animations_to_animation_player()
-#	print(anim_player.get_animation_list())
+func _physics_process(_delta):
+	velocity = Vector2.ZERO
+	get_input()
+#	if velocity != Vector2.ZERO:
+#		print("Direction: " + str(direction))
+#		print("Velocity: " + str(velocity))
+	#animate()
+	move_and_slide(velocity)
+	
+func get_input():
+	if Input.is_action_pressed("right"):
+		direction = "right"
+		velocity = Vector2.RIGHT
+	if Input.is_action_pressed("up"):
+		direction = "up"
+		velocity = Vector2.UP
+	if Input.is_action_pressed("left"):
+		direction = "left"
+		velocity = Vector2.LEFT
+	if Input.is_action_pressed("down"):
+		direction = "down"
+		velocity = Vector2.LEFT
 #
+#func animate:
+
 #func add_animations_to_animation_player():
 #	var animations_in_data = anim_data.anims
 #	for i in animations_in_data:
@@ -38,14 +63,14 @@ onready var anim_data = get_node("AnimationData")
 #	anim.track_insert_key(0, 0.4, 116)
 #	anim.track_insert_key(0, 0.5, 117)
 #	anim_player.play("walk_right")
-
-func _input(event):
-	if event.is_action_pressed("right"):
-		sprite.frame = 0
-	elif event.is_action_pressed("up"):
-		sprite.frame = 1
-	elif event.is_action_pressed("left"):
-		sprite.frame = 2
-	elif event.is_action_pressed("down"):
-		sprite.frame = 3
+#
+#func _input(Input):
+#	if event.is_action_pressed("right"):
+#		sprite.frame = 0
+#	elif event.is_action_pressed("up"):
+#		sprite.frame = 1
+#	elif event.is_action_pressed("left"):
+#		sprite.frame = 2
+#	elif event.is_action_pressed("down"):
+#		sprite.frame = 3
 
