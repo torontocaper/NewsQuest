@@ -24,7 +24,7 @@ func _ready():
 		##anim.track_insert_key(0, 0.0, Vector2(anims[i]["frame.coord.x.start"], anims[i]["frame.coord.y"]))
 	print(get_animation_list())
 #	print(len(anims))
-#	print(anims)
+	print(anims)
 
 func set_animations():# fill out "anims" dict with every combination of state + direction
 	var animations_added = 0
