@@ -15,7 +15,7 @@ func _physics_process(_delta):
 #		print("Direction: " + str(direction))
 #		print("Velocity: " + str(velocity))
 	#animate()
-	move_and_slide(velocity)
+	var _new_velocity = move_and_slide(velocity)
 	
 func get_input():
 	if Input.is_action_pressed("right"):
