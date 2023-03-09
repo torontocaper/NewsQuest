@@ -1,0 +1,63 @@
+[gd_scene format=2]
+
+[node name="DeskView" type="Node2D"]
+__meta__ = {
+"_editor_description_": "The general scene for writing articles, making calls and laying out the paper."
+}
+
+[node name="Room" type="Node2D" parent="."]
+__meta__ = {
+"_editor_description_": "The newsroom, as viewed from your desk."
+}
+
+[node name="Desk" type="Node2D" parent="Room"]
+__meta__ = {
+"_editor_description_": "Your desk."
+}
+
+[node name="Laptop" type="Node2D" parent="Room/Desk"]
+__meta__ = {
+"_editor_description_": "Or typewriter. The thing you use to write articles and/or lay out the paper. Maybe you graduate from one to the other."
+}
+
+[node name="Lamp" type="Node2D" parent="Room/Desk"]
+__meta__ = {
+"_editor_description_": "To light things up at night."
+}
+
+[node name="Papers" type="Node2D" parent="Room/Desk"]
+__meta__ = {
+"_editor_description_": "Your various printed materials -- letters, court documents, manilla envelopes."
+}
+
+[node name="Phone" type="Node2D" parent="Room/Desk"]
+__meta__ = {
+"_editor_description_": "For making phone calls."
+}
+
+[node name="Coffee" type="Node2D" parent="Room/Desk"]
+__meta__ = {
+"_editor_description_": "For staying awake."
+}
+
+[node name="Clock" type="Node2D" parent="Room"]
+__meta__ = {
+"_editor_description_": "Always ticking. Deadlines, appointments, meetings (?)"
+}
+
+[node name="BulletinBoard" type="Node2D" parent="Room"]
+__meta__ = {
+"_editor_description_": "All the pieces matter."
+}
+
+[node name="Post-its" type="Node2D" parent="Room/BulletinBoard"]
+__meta__ = {
+"_editor_description_": "Ideas, facts, notions."
+}
+
+[node name="Photos" type="Node2D" parent="Room/BulletinBoard"]
+__meta__ = {
+"_editor_description_": "Headshots, paparazzi photos, etc."
+}
+
+[node name="Maps" type="Node2D" parent="Room/BulletinBoard"]
