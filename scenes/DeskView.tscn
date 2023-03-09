@@ -1,4 +1,6 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/concept_art/NewsQuest-DeskView.png" type="Texture" id=1]
 
 [node name="DeskView" type="Node2D"]
 __meta__ = {
@@ -11,53 +13,69 @@ __meta__ = {
 }
 
 [node name="Desk" type="Node2D" parent="Room"]
+position = Vector2( 494, 376 )
 __meta__ = {
 "_editor_description_": "Your desk."
 }
 
 [node name="Laptop" type="Node2D" parent="Room/Desk"]
+position = Vector2( -11, -86 )
 __meta__ = {
 "_editor_description_": "Or typewriter. The thing you use to write articles and/or lay out the paper. Maybe you graduate from one to the other."
 }
 
 [node name="Lamp" type="Node2D" parent="Room/Desk"]
+position = Vector2( -208, -105 )
 __meta__ = {
 "_editor_description_": "To light things up at night."
 }
 
 [node name="Papers" type="Node2D" parent="Room/Desk"]
+position = Vector2( -169, -57 )
 __meta__ = {
 "_editor_description_": "Your various printed materials -- letters, court documents, manilla envelopes."
 }
 
 [node name="Phone" type="Node2D" parent="Room/Desk"]
+position = Vector2( 169, -57 )
 __meta__ = {
 "_editor_description_": "For making phone calls."
 }
 
 [node name="Coffee" type="Node2D" parent="Room/Desk"]
+position = Vector2( 102, -82 )
 __meta__ = {
 "_editor_description_": "For staying awake."
 }
 
 [node name="Clock" type="Node2D" parent="Room"]
+position = Vector2( 280, 134 )
 __meta__ = {
 "_editor_description_": "Always ticking. Deadlines, appointments, meetings (?)"
 }
 
 [node name="BulletinBoard" type="Node2D" parent="Room"]
+position = Vector2( 732, 166 )
 __meta__ = {
 "_editor_description_": "All the pieces matter."
 }
 
 [node name="Post-its" type="Node2D" parent="Room/BulletinBoard"]
+position = Vector2( -62, -80 )
 __meta__ = {
 "_editor_description_": "Ideas, facts, notions."
 }
 
 [node name="Photos" type="Node2D" parent="Room/BulletinBoard"]
+position = Vector2( 103, -36 )
 __meta__ = {
 "_editor_description_": "Headshots, paparazzi photos, etc."
 }
 
 [node name="Maps" type="Node2D" parent="Room/BulletinBoard"]
+position = Vector2( 62, -4 )
+
+[node name="NewsQuest-DeskView" type="Sprite" parent="."]
+self_modulate = Color( 0.270588, 0.270588, 0.270588, 1 )
+texture = ExtResource( 1 )
+centered = false
