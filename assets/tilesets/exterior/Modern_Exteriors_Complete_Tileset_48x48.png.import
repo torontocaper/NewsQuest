@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Room_Builder_Office_16x16.png-9acaf683ed3f3c75c9936e42fc8b2317.stex"
+path="res://.import/Modern_Exteriors_Complete_Tileset_48x48.png-f925bd9cf072a25d1df9c31dab080bad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/Room_Builder_Office_16x16.png"
-dest_files=[ "res://.import/Room_Builder_Office_16x16.png-9acaf683ed3f3c75c9936e42fc8b2317.stex" ]
+source_file="res://assets/tilesets/exterior/Modern_Exteriors_Complete_Tileset_48x48.png"
+dest_files=[ "res://.import/Modern_Exteriors_Complete_Tileset_48x48.png-f925bd9cf072a25d1df9c31dab080bad.stex" ]
 
 [params]
 
