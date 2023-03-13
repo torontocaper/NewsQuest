@@ -4,6 +4,8 @@ var direction = "down"
 var state = "idle"
 var velocity : Vector2 = Vector2.ZERO
 
+export var SPEED = 100
+
 onready var sprite = get_node("CharacterSprite")
 onready var anim_player = get_node("AnimationPlayer")
 onready var anim_data = get_node("AnimationData")
@@ -20,16 +22,16 @@ func _physics_process(_delta):
 func get_input():
 	if Input.is_action_pressed("right"):
 		direction = "right"
-		velocity = Vector2.RIGHT
+		velocity = Vector2.RIGHT * SPEED
 	if Input.is_action_pressed("up"):
 		direction = "up"
-		velocity = Vector2.UP
+		velocity = Vector2.UP * SPEED
 	if Input.is_action_pressed("left"):
 		direction = "left"
-		velocity = Vector2.LEFT
+		velocity = Vector2.LEFT * SPEED
 	if Input.is_action_pressed("down"):
 		direction = "down"
-		velocity = Vector2.LEFT
+		velocity = Vector2.DOWN * SPEED
 #
 #func animate:
 
