@@ -1,0 +1,185 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assets/spritesheets/mod_int_char_template_48.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "idle_down"
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 18, 1 ), Vector2( 19, 1 ), Vector2( 20, 1 ), Vector2( 21, 1 ), Vector2( 22, 1 ), Vector2( 23, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "idle_left"
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 12, 1 ), Vector2( 13, 1 ), Vector2( 14, 1 ), Vector2( 15, 1 ), Vector2( 16, 1 ), Vector2( 17, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "idle_right"
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 1 ), Vector2( 1, 1 ), Vector2( 2, 1 ), Vector2( 3, 1 ), Vector2( 4, 1 ), Vector2( 5, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "idle_up"
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 6, 1 ), Vector2( 7, 1 ), Vector2( 8, 1 ), Vector2( 9, 1 ), Vector2( 10, 1 ), Vector2( 11, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "walk_down"
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 18, 2 ), Vector2( 19, 2 ), Vector2( 20, 2 ), Vector2( 21, 2 ), Vector2( 22, 2 ), Vector2( 23, 2 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "walk_left"
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 12, 2 ), Vector2( 13, 2 ), Vector2( 14, 2 ), Vector2( 15, 2 ), Vector2( 16, 2 ), Vector2( 17, 2 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "walk_right"
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 2 ), Vector2( 1, 2 ), Vector2( 2, 2 ), Vector2( 3, 2 ), Vector2( 4, 2 ), Vector2( 5, 2 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "walk_up"
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 6, 2 ), Vector2( 7, 2 ), Vector2( 8, 2 ), Vector2( 9, 2 ), Vector2( 10, 2 ), Vector2( 11, 2 ) ]
+}
+
+[sub_resource type="CapsuleShape2D" id=10]
+
+[node name="SimpleCharacter" type="KinematicBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -10 )
+texture = ExtResource( 1 )
+hframes = 56
+vframes = 20
+frame = 56
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite")
+autoplay = "idle_down"
+anims/RESET = SubResource( 1 )
+anims/idle_down = SubResource( 2 )
+anims/idle_left = SubResource( 3 )
+anims/idle_right = SubResource( 4 )
+anims/idle_up = SubResource( 5 )
+anims/walk_down = SubResource( 6 )
+anims/walk_left = SubResource( 7 )
+anims/walk_right = SubResource( 8 )
+anims/walk_up = SubResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 2, 2 )
+shape = SubResource( 10 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
