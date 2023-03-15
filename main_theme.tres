@@ -1,9 +1,20 @@
-[gd_resource type="Theme" load_steps=3 format=2]
+[gd_resource type="Theme" load_steps=6 format=2]
 
 [ext_resource path="res://assets/fonts/syne_mono/SyneMono-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/tilesets/ui/Modern_UI_Style_2_48x48.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 924, 1251, 69, 36 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 1023, 1251, 69, 36 )
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
 
 [resource]
 default_font = SubResource( 1 )
+CheckButton/icons/off = SubResource( 2 )
+CheckButton/icons/on = SubResource( 3 )
